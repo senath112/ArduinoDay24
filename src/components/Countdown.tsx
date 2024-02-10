@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion as m } from 'framer-motion'
 
+
 type CountdownProps = {
   targetDate: Date;
 };
@@ -10,17 +11,18 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
 
   function calculateRemainingTime() {
     const currentTime = new Date().getTime();
-    const difference = targetDate.getTime() - currentTime;
+    const targetDate = new Date('2024-03-23T00:00:00').getTime();
+    const difference = targetDate - currentTime;
     return {
-      // days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      // hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      // minutes: Math.floor((difference / 1000 / 60) % 60),
-      // seconds: Math.floor((difference / 1000) % 60),
+      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+      minutes: Math.floor((difference / 1000 / 60) % 60),
+      seconds: Math.floor((difference / 1000) % 60),
 
-      days: 0,
-      hours: 0,
-      minutes: 0,
-      seconds: 0,
+      // days: 0,
+      // hours: 0,
+      // minutes: 0,
+      // seconds: 0,
     };
   }
 
@@ -73,5 +75,8 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
     </>
   );
 };
+
+const targetDate = new Date('2024-03-23T00:00:00'); // Set target date to March 23, 2024
+
 
 export default Countdown;
