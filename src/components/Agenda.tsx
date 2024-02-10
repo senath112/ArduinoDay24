@@ -78,7 +78,7 @@ export default function BasicTabs() {
               }}
             >
               <Tab label="Day 1" {...a11yProps(0)} sx={{ padding: 0 }} />
-              <Tab label="Day 2" {...a11yProps(1)} sx={{ padding: 0 }} />
+              {/* <Tab label="Day 2" {...a11yProps(1)} sx={{ padding: 0 }} /> */}
             </Tabs>
           </Box>
 
@@ -97,8 +97,8 @@ export default function BasicTabs() {
                 </div>
                 <div className='w-[100%] md:items-center md:pr-8 pt-4 md:pt-5'>
                   <div className='flex flex-col md:pt-5'>
-                    <h4 className='text-center md:text-right'>24th of March 2023</h4>
-                    <p className='text-center font-normal text-[#0e0e0e8a] md:text-right'> St. John&apos;s College Nugegoda</p>
+                    <h4 className='text-center md:text-right'>23rd of March 2024</h4>
+                    <p className='text-center font-normal text-[#0e0e0e8a] md:text-right'> Trace City, Colombo</p>
                   </div>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export default function BasicTabs() {
                   {/* row-4 */}
                   <div className={style.agendarowStyle}>
                     <div className='text-right'>
-                      <h1 className='font-normal text-xl'>09:45</h1>
+                      <h1 className='font-normal text-xl'>09:30</h1>
                       <p className='font-normal text-[#0e0e0e8a] p-0 m-0'>12:00</p>
                     </div>
                   </div>
@@ -158,8 +158,8 @@ export default function BasicTabs() {
                   {/* row-6 */}
                   <div className={style.agendarowStyle}>
                     <div className='text-right'>
-                      <h1 className='font-normal text-xl'>14:00</h1>
-                      <p className='font-normal text-[#0e0e0e8a] p-0 m-0'>15:00</p>
+                      <h1 className='font-normal text-xl'>13:00</h1>
+                      <p className='font-normal text-[#0e0e0e8a] p-0 m-0'>13:30</p>
                     </div>
                   </div>
                   {/* row-6 */}
@@ -167,8 +167,8 @@ export default function BasicTabs() {
                   {/* row-7 */}
                   <div className={style.agendarowStyle}>
                     <div className='text-right'>
-                      <h1 className='font-normal text-xl'>15:00</h1>
-                      <p className='font-normal text-[#0e0e0e8a] p-0 m-0'>17:45</p>
+                      <h1 className='font-normal text-xl'>13:30</h1>
+                      <p className='font-normal text-[#0e0e0e8a] p-0 m-0'>14:00</p>
                     </div>
                   </div>
                   {/* row-7 */}
@@ -176,8 +176,8 @@ export default function BasicTabs() {
                   {/* row-8 */}
                   <div className={style.agendarowStyle}>
                     <div className='text-right'>
-                      <h1 className='font-normal text-xl'>17:45</h1>
-                      <p className='font-normal text-[#0e0e0e8a] p-0 m-0'>18:00</p>
+                      <h1 className='font-normal text-xl'>14:00</h1>
+                      <p className='font-normal text-[#0e0e0e8a] p-0 m-0'>14:30</p>
                     </div>
                   </div>
                   {/* row-8 */}
@@ -209,7 +209,7 @@ export default function BasicTabs() {
                   {/* row-3 */}
                   <div className={style.agendarowStyle}>
                     <div className={style.lgDescriptionStyle}>
-                      <h1 className={style.agendaDescriptionStyle}>Challenge Explanation</h1>
+                      <h1 className={style.agendaDescriptionStyle}>Keynote Speech</h1>
                     </div>
                   </div>
                   {/* row-3 */}
@@ -217,7 +217,7 @@ export default function BasicTabs() {
                   {/* row-4 */}
                   <div className={style.agendarowStyle}>
                     <div className={style.lgDescriptionStyle}>
-                      <h1 className={style.agendaDescriptionStyle}>Challenge</h1>
+                      <h1 className={style.agendaDescriptionStyle}>Entertainment</h1>
                     </div>
                   </div>
                   {/* row-4 */}
@@ -233,7 +233,7 @@ export default function BasicTabs() {
                   {/* row-6 */}
                   <div className={style.agendarowStyle}>
                     <div className={style.lgDescriptionStyle}>
-                      <h1 className={style.agendaDescriptionStyle}>Challenge</h1>
+                      <h1 className={style.agendaDescriptionStyle}>Fun Activity</h1>
                     </div>
                   </div>
                   {/* row-6 */}
@@ -241,7 +241,7 @@ export default function BasicTabs() {
                   {/* row-7 */}
                   <div className={style.agendarowStyle}>
                     <div className={style.lgDescriptionStyle}>
-                      <h1 className={style.agendaDescriptionStyle}>Start to the Judge</h1>
+                      <h1 className={style.agendaDescriptionStyle}>Award Ceremony</h1>
                     </div>
                   </div>
                   {/* row-7 */}
