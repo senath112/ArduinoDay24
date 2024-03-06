@@ -199,17 +199,7 @@ function Register({ }: Props) {
           }}
           className="mt-20 max-w-4xl flex flex-col gap-10 mx-auto md:justify-center"
         >
-          <div>
-            <h3 className="text-30 text-md font-medium">
-              <span className="text-70 font-bold">*</span>If you are
-              participating to the Arduino Day, please Read More about{" "}
-              <span className="text-70 underline cursor-pointer">
-                {" "}
-                <Link to={"/dayone-regulations"}>Day 1</Link>
-              </span>{" "}
-              Rules & Regulations.
-            </h3>
-          </div>
+          
 
           <hr />
 
