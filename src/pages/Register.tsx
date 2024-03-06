@@ -340,18 +340,9 @@ function Register({ }: Props) {
 
                 {day1 && (
                   <div>
-                    <h4 className={style.formLableStyle}>
-                    2023 Arduino Day Hackathon Event එක සදහා බලපොරොත්තු වු කණ්ඩායම් ප්‍රමාණය දැනටමත් 
-                    ඉක්මවා ඇති බැවින් Hackthon තරගාවලියේ Registration කටයුතු නවත්වා ඇති බව කණගාටුවෙන් දැනුම් දී සිටිමු.<br/> <br/> 
-                    නමුත් Exhibition සහා Knowledge Sharing (Day two) Event එක සදහා තවමත් ඔබට සහභාගිවීමට අවස්ථාවක් ඇති බැවින් ඒ සදහා
-                     Register වන ලෙස කාරුණිකව දන්වා සිටිමු.
-
+                    
                     </h4>
-                    {/* <h5 className="text-30 font-normal text-sm">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      Ut enim ad minim veniam.
-                    </h5> */}
+                    
                     <div className="flex flex-row gap-5 mt-2">
                       {/* <div>
                         <input
