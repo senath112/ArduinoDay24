@@ -301,16 +301,7 @@ function Register({ }: Props) {
                     ඔබ සහභාගී වීමට කැමති දිනය කුමක්ද ?
                   </h5>
                   <div className="flex flex-row gap-5 mt-2">
-                    <div>
-                      <input
-                        type="checkbox"
-                        id="subscribe"
-                        name="subscribe"
-                        checked={day1}
-                        onChange={(e) => setDayFunction(e.target.checked)}
-                      />{" "}
-                      <span className="text-30 font-medium text-md">Day 1 - Hackathon</span>
-                    </div>
+                    
                     <div>
                       <input
                         type="checkbox"
