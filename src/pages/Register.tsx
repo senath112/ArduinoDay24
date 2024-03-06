@@ -310,7 +310,7 @@ function Register({ }: Props) {
                         checked={day2}
                         onChange={(e) => setDay2(e.target.checked)}
                       />{" "}
-                      <span className="text-30 font-medium text-md">Day 2 - Main Event</span>
+                      <span className="text-30 font-medium text-md">Main Event</span>
                     </div>
                   </div>
                 </div>
