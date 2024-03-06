@@ -69,7 +69,7 @@ const Footer = ({ }: Props) => {
                   <span>FOLLOW US ON</span>
                 </div>
                 <div className="flex mb-7 items-center justify-center gap-[22px]">
-                  <a href="#"><img src="/facebook-icon.svg"></img></a>
+                  <a href="https://www.facebook.com/arduinocommunityinsrilanka"><img src="/facebook-icon.svg"></img></a>
                   <a href="#"><img src="/linkedin-icon.svg"></img></a>
                   <a href="#"><img src="/twitter-icon.svg"></img></a>
                   <a href="#"><img src="/youtube-icon.svg"></img></a>
