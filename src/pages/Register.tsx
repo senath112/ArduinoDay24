@@ -591,7 +591,7 @@ function Register({ }: Props) {
                 Thank You !
               </h1>
               <p className="text-center text-sm text-30 font-medium">
-                Thank you for registering for the Arduino Day 2023.
+                Thank you for registering for the Arduino Day 2024.
               </p>
               <div>
                 <Link to={"/"}>
