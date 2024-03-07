@@ -25,7 +25,7 @@ function Register({ }: Props) {
   const [m1uniorscl, setM1UniOrScl] = useState(""); // Member 1 University or School
   const [eduM1Name, setEduM1Name] = useState(""); //Member 1 University or School Name
   const [m1phone, setM1Phone] = useState(""); // Member 1 Phone
-
+  const [grade, setgrade] = useState("");
   const [m2fname, setM2FName] = useState(""); // Member 2 Full Name
   const [m2email, setM2Email] = useState(""); // Member 2 Email
   const [m2uniorscl, setM2UniOrScl] = useState(""); // Member 2 University or School
@@ -70,6 +70,7 @@ function Register({ }: Props) {
         FullName: fname,
         Email: email,
         University_or_School: uniorscl,
+        Grade: grade,
         Education_center_Name: eduName,
         Phone: phone,
         Attends: {
@@ -272,6 +273,18 @@ function Register({ }: Props) {
                     type="text"
                     value={eduName}
                     onChange={(e) => setEduName(e.target.value)}
+                    required
+                  />
+                </div>
+                <div>
+                  <h4 className={style.formLableStyle}>
+                    School Grade/University Year
+                  </h4>
+                  <input
+                    className={style.formFieldStyle}
+                    type="text"
+                    value={grade}
+                    onChange={(e) => setgrade(e.target.value)}
                     required
                   />
                 </div>
