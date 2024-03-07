@@ -73,25 +73,11 @@ function Register({ }: Props) {
         Education_center_Name: eduName,
         Phone: phone,
         Attends: {
-          Day_One: false,
+          Day_One: true,
           Day_Two: day2,
-        },
-        Hackthon: hackthon,
+        }
         TeamName: teamName,
-        Member_One: {
-          FullName: m1fname,
-          Email: m1email,
-          University_or_School: m1uniorscl,
-          Education_center_Name: eduM1Name,
-          Phone: m1phone,
-        },
-        Member_Two: {
-          FullName: m2fname,
-          Email: m2email,
-          University_or_School: m2uniorscl,
-          Education_center_Name: eduM2Name,
-          Phone: m2phone,
-        },
+        
       };
 
       const docRef = doc(db, "Arduino_Day_Registration", email);
