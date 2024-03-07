@@ -74,7 +74,7 @@ function Register({ }: Props) {
         Education_center_Name: eduName,
         Phone: phone,
         Attends: {
-          Day_One: true,
+          Day_One: "N/A",
           Day_Two: day2,
         }
        
