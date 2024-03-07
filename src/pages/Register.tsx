@@ -77,7 +77,7 @@ function Register({ }: Props) {
           Day_One: true,
           Day_Two: day2,
         }
-        TeamName: teamName,
+       
         
       };
 
