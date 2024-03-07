@@ -74,7 +74,7 @@ export default function BasicTabs() {
               sx={{
                 "& button": { borderRadius: 10, height: '2rem!important', color: '#F26727', fontSize: 12, fontFamily: 'roboto' },
                 "& button.Mui-selected": { backgroundColor: '#F26727', color: 'white' },
-                "& div": { backgroundColor: '#ffe4dc', borderRadius: 10, maxWidth: '11.25rem' }
+                "& div": { backgroundColor: '#ffe4dc', borderRadius: 10, maxWidth: '5.5rem' }
               }}
             >
               <Tab label="Day 1" {...a11yProps(0)} sx={{ padding: 0 }} />
