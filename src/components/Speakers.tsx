@@ -17,9 +17,7 @@ const Speakers = ({ }: Props) => {
         <p className="font-semibold text-4xl text-80">
           SPEAKERS
         </p>
-        <p className="text-base text-80/60">
-            Behold, the orators for the program of the second day.
-        </p>
+      
         <div className=''>
           <div id="speakersGrid" className="mt-10 mb-24 grid gap-3 md:grid-cols-2 lg:grid-cols-4 ">
             <div className="md:order-1 md:col-span-2">
