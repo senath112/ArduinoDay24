@@ -98,7 +98,7 @@ export default function BasicTabs() {
                 <div className='w-[100%] md:items-center md:pr-8 pt-4 md:pt-5'>
                   <div className='flex flex-col md:pt-5'>
                     <h4 className='text-center md:text-right'>23rd of March 2024</h4>
-                    <p className='text-center font-normal text-[#0e0e0e8a] md:text-right'> Trace City, Colombo</p>
+                    <p className='text-center font-normal text-[#0e0e0e8a] md:text-right'> Hatch auditorium, Colombo 01</p>
                   </div>
                 </div>
               </div>
