@@ -58,7 +58,7 @@ const Speakers = ({ }: Props) => {
             <div className="border-2 border-30 rounded-md px-6 h-[200px] md:h-[100%] grid place-items-center md:order-6">
               <p className={style.infoCardText}>
                 <div className={style.infoCardName}>
-                  Ushan Chamindha
+                  Ushan Chaminda
                 </div>
                 <div className={style.infoCardDesc}>
                 Connecting the Unconnected: The Wonders of the Internet of Things - In this speech, we will explore the fascinating world of IoT and discuss how it connects people, places, and things like never before.
@@ -70,18 +70,18 @@ const Speakers = ({ }: Props) => {
             </div>
 
             <div className="md:order-8">
-              <img src="/chkanux.jpeg" alt="My Image" className={style.image} />
+              <img src="/pr.jpeg" alt="My Image" className={style.image} />
             </div>
             <div className="border-2 border-30 rounded-md px-6 h-[200px] md:h-[100%] grid place-items-center md:order-7">
               <p className={style.infoCardText}>
                 <div className={style.infoCardName}>
-             dr Tirosh
+             Prof Prabath Weerasinghe
                 </div>
                 <div className={style.infoCardDesc}>
                 ..............
                 </div>
                 <div className={style.infoCardPost}>
-                 .............
+               Professor,NSBM University
                 </div>
               </p>
             </div>
