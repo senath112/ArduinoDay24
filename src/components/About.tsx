@@ -58,9 +58,9 @@ function About() {
              {/* card-3 */}
              <m.div className="flex items-center">
                <div>
-                 <img src="speaker_image_url" alt="Speaker" className="w-20 h-20 rounded-full" /> {/* Replace 'speaker_image_url' with the actual URL of your speaker image */}
+                 {/* Replace 'speaker_image_url' with the actual URL of your speaker image */}
                </div>
-               <Link to={'/daytwo-regulations'} className="ml-4">
+               <Link to={'/'} className="ml-4">
                  <ArrowForwardIcon className='text-30' />
                </Link>
              </m.div>
