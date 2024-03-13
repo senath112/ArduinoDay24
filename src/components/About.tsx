@@ -56,15 +56,7 @@ function About() {
                </div>
              </m.div>
              {/* card-3 */}
-             <m.div className="flex">
-               <div className="mb-2 text-xl font-medium text-30">
-                 Speaker <br />Session
-               </div>
-               <Link to={'/daytwo-regulations'}>
-                 <ArrowForwardIcon className='text-30 mt-2' />
-               </Link>
-             </m.div>
-          </m.div>
+             
         </div>
       </div>
     </section>
