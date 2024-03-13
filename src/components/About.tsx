@@ -65,8 +65,7 @@ function About({ }: Props) {
           </div>
           <m.div
 
-            <m.div
-
+           
             
              {/* card-2 */}
              
