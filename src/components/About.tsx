@@ -58,7 +58,7 @@ function About({ }: Props) {
            <m.div
 
              className='flex flex-col md:flex-row gap-7'>
-             {/* {/* card-2 */}
+             /* 
              <m.div
                className="flex">
                <div
@@ -72,7 +72,7 @@ function About({ }: Props) {
                  </Link>
                </div>
              </m.div>
-             {/* card-2 */} */}
+             */
 
 
              {/* card-3 */}
