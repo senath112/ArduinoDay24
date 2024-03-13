@@ -58,21 +58,16 @@ function About({ }: Props) {
            <m.div
 
              className='flex flex-col md:flex-row gap-7'>
-             /* 
+             
              <m.div
                className="flex">
                <div
                  className="w-[100%] h-[25rem] md:w-[15rem] md:max-h-[20rem] rounded-lg border-30 border-2 px-8 pt-5 pb-9 flex justify-between card-two">
-                 <h5
-                   className="mb-2 text-xl font-medium text-30">
-                   Hackathon <br />Challenge
-                 </h5>
-                 <Link to={'/dayone-regulations'}>
-                   <ArrowForwardIcon className='text-30 mt-2' />
-                 </Link>
+                 
+              
                </div>
              </m.div>
-             */
+            
 
 
              {/* card-3 */}
