@@ -63,7 +63,10 @@ function About({ }: Props) {
             </m.div>
             {/* card 1 */}
           </div>
+          <m.div
 
+             className='flex flex-col md:flex-row gap-7'>
+             
 
             {/* card-3 */}
             <div className="flex">
