@@ -17,7 +17,7 @@ const Sponsors = ({ }: Props) => {
           <div
             className="flex flex-col text-center gap-8 lg:flex lg:flex-row lg:gap-0">
             <a href="#" className='w-[100%]'>
-              <img src="/tb.png" alt="logo1" className='grayscale hover:grayscale-0 w-[20%] mx-auto lg:mr-[20%]' />
+              <img src="/tb.jpg" alt="logo1" className='grayscale hover:grayscale-0 w-[20%] mx-auto lg:mr-[20%]' />
             </a>
             <a href="#" className='w-[100%]'>
               <img src="/xudder.png" alt="logo1" className='grayscale hover:grayscale-0 w-[60%] mx-auto lg:mt-11 lg:ml-[7%]' />
