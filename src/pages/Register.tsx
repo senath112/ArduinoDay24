@@ -291,14 +291,7 @@ function Register({ }: Props) {
 
                 <hr />
 
-                <div>
-                  <h4 className={style.formLableStyle}>
-                    What is the date you are willing to participate
-
-                  </h4>
-                  
-                  
-                </div>
+               
 
                 {day1 && (
                   <div>
