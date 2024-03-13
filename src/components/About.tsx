@@ -47,7 +47,7 @@ function About({ }: Props) {
                 </h5>
                 <p className="mb-0 text-white font-light">
                 Arduino Day 2023 is just around the corner and we at arduino community srilanka are excited to bring you some 
-                creative content to celebrate!  Register for hackathons, educational seminars and inspiration to help you explore 
+                creative content to celebrate! educational seminars and inspiration to help you explore 
                 the endless possibilities of this amazing platform.
                 </p>
 
@@ -65,6 +65,11 @@ function About({ }: Props) {
           </div>
           <m.div
 
+            <m.div
+
+            
+             {/* card-2 */}
+             
              className='flex flex-col md:flex-row gap-7'>
              
 
