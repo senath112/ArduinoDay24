@@ -56,7 +56,20 @@ function About() {
                </div>
              </m.div>
              {/* card-3 */}
-             
+             <m.div className="flex flex-col items-center">
+               <div className="w-[15rem] h-[15rem] bg-gray-200 rounded-lg flex items-center justify-center">
+                 <img src="/cardImg3.png" alt="Speaker" className="w-10 h-10" /> {/* Replace 'speaker_image_url' with the actual URL of your speaker image */}
+               </div>
+               <div className="mt-2 text-center">
+                 <h5 className="mb-2 text-xl font-medium text-30">
+                   Speaker Session
+                 </h5>
+                 <Link to={'/daytwo-regulations'}>
+                   <ArrowForwardIcon className='text-30 mt-2' />
+                 </Link>
+               </div>
+             </m.div>
+          </m.div>
         </div>
       </div>
     </section>
