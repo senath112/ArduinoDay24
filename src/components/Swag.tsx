@@ -16,7 +16,7 @@ const Swag = ({ }: Props) => {
             <div className='text-5xl md:text-5xl lg:text-6xl  xl:text-[4.2rem] font-black text-80'>Grab Your</div>
             <div className='text-6xl md:text-7xl lg:text-8xl xl:text-[6.7rem] font-black text-10'>Arduino Tee</div>
             <div className="">
-            <Link to={'https://payment-page.onepay.lk/redirect/PC2F1A351CE1'}>
+            <Link to={'/'}>
               <button className="btn-4 border-80 lg:text-lg ">Shop Now</button>
               </Link>
             </div>
