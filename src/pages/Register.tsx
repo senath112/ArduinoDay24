@@ -94,9 +94,6 @@ function Register({ }: Props) {
       }
 
     }
-    else {
-      alert("Please select atleast a day")
-    }
 
   };
 
