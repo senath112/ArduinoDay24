@@ -6,9 +6,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import MoonLoader from "react-spinners/MoonLoader";
 import Footer from "../components/Footer";
-
 type Props = {};
-
 function Register({ }: Props) {
   const [fname, setFName] = useState(""); // Full Name
   const [email, setEmail] = useState(""); // Email
@@ -18,7 +16,6 @@ function Register({ }: Props) {
   const [day1, setDay1] = useState(false); // Day 1 Attend Yes or No
   const [day2, setDay2] = useState(false); // Day 2 Attend Yes or No
   const [hackthon, setHackthon] = useState(""); // Attend Hackthon
-
   const [teamName, setTeamName] = useState(""); // Team Name
   const [m1fname, setM1FName] = useState(""); // Member 1 Full Name
   const [m1email, setM1Email] = useState(""); // Member 1 Email
@@ -31,39 +28,29 @@ function Register({ }: Props) {
   const [m2uniorscl, setM2UniOrScl] = useState(""); // Member 2 University or School
   const [eduM2Name, setEduM2Name] = useState(""); //Member 2 University or School Name
   const [m2phone, setM2Phone] = useState(""); // Member 2 Phone
-
   const [formSubmited, setFormSubmitted] = useState(false);
   const [exists, setExists] = useState(false);
-
   const [loading, setLoading] = useState(false);
-
   const override = {
     display: "block",
     margin: "0 auto",
     borderColor: "red",
   };
-
   const onOptionChange = (event: any) => {
     setHackthon(event.target.value);
   };
-
   const onOptionChangeEdu = (event: any) => {
     setUniOrScl(event.target.value);
   };
-
   const onOptionChangeEduM1 = (event: any) => {
     setM1UniOrScl(event.target.value);
   };
-
   const onOptionChangeEduM2 = (event: any) => {
     setM2UniOrScl(event.target.value);
   };
-
   const onSubmitHandler = async (event: any) => {
     event.preventDefault();
     if (day1 || day2) {
-
-
       setLoading(true);
       const docData =
       {
@@ -80,10 +67,8 @@ function Register({ }: Props) {
        
         
       };
-
       const docRef = doc(db, "Arduino_Day_Registration", email);
       const docSnap = await getDoc(docRef);
-
       if (docSnap.exists()) {
         setExists(true);
       } else {
@@ -92,27 +77,24 @@ function Register({ }: Props) {
         setFormSubmitted(true);
         setLoading(false);
       }
-
     }
-
+    else {
+      alert("Please select atleast a day")
+    }
   };
-
   const style = {
     formLableStyle: "text-30 font-medium text-md",
     formFieldStyle:
       "border-2 bg-10/0 border-30 rounded-md w-[100%] h-9 mt-2 md:h-10 active:border-70 focus:border-70 active:outline-none focus:outline-none text-30 font-medium px-3",
   };
-
   const setDayFunction = (value) => {
     setDay1(value);
     // onOptionChange("Yes");
     setHackthon("No");
   }
-
   return (
     <div className="px-2">
       <NavBar />
-
       <div className="px-4 md:px-10 lg:px-20 ">
         <div className="flex justify-center">
           <div className="grid grid-cols-1 md:grid-cols-2 md:px-3 mt-10 max-w-[1000px]">
@@ -136,11 +118,9 @@ function Register({ }: Props) {
               <h1 className="text-30 font-semibold text-4xl -mt-3 ">
                 Should I Register ?
               </h1>
-
               <p className="text-80 text-sm font-medium my-4 ">
               
               </p>
-
               {/* <button className='btn-1'>Let's Register</button> */}
             </m.div>
             <m.div
@@ -167,7 +147,6 @@ function Register({ }: Props) {
             </m.div>
           </div>
         </div>
-
         <m.div
           initial={{
             opacity: 0,
@@ -184,9 +163,7 @@ function Register({ }: Props) {
           className="mt-20 max-w-4xl flex flex-col gap-10 mx-auto md:justify-center"
         >
           
-
           <hr />
-
           {!formSubmited && (
             <form onSubmit={onSubmitHandler}>
               <div className="grid grid-cols-1 gap-8">
@@ -228,7 +205,6 @@ function Register({ }: Props) {
                     </div>
                   </div>
                 </div>
-
                 <div>
                   <h4 className={style.formLableStyle}>Full Name</h4>
                   <input
@@ -239,7 +215,6 @@ function Register({ }: Props) {
                     required
                   />
                 </div>
-
                 <div>
                   <h4 className={style.formLableStyle}>Email</h4>
                   <input
@@ -250,7 +225,6 @@ function Register({ }: Props) {
                     required
                   />
                 </div>
-
                 <div>
                   <h4 className={style.formLableStyle}>WhatsApp Number</h4>
                   <input
@@ -285,12 +259,31 @@ function Register({ }: Props) {
                     required
                   />
                 </div>
-
                 <hr />
+                <div>
+                  <h4 className={style.formLableStyle}>
+                     What is the date you are willing to participate
 
-               
+                   </h4>
+                   <h5 className="text-30 font-normal text-sm">
+                     ඔබ සහභාගී වීමට කැමති දිනය කුමක්ද ?
+                   </h5>
+                   <div className="flex flex-row gap-5 mt-2">
 
-                {day1 && (
+                     <div>
+                       <input
+                         type="checkbox"
+                         id="subscribe"
+                         name="subscribe"
+                         checked={day2}
+                         onChange={(e) => setDay2(e.target.checked)}
+                       />{" "}
+                       <span className="text-30 font-medium text-md">Main Event</span>
+                     </div>
+                   </div>
+                 </div>
+
+                 {day1 && (
                   <div>
                     <h4 className={style.formLableStyle}>
                     
@@ -326,7 +319,6 @@ function Register({ }: Props) {
                     </div>
                   </div>
                 )}
-
                 <hr />
                 {day1 && false && (
                   <div className="grid grid-cols-1 gap-4">
@@ -339,11 +331,7 @@ function Register({ }: Props) {
                         onChange={(e) => setTeamName(e.target.value)}
                         required
                       />
-
-
                       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-6 md:mt-10">
-
-
                         <div className="grid grid-cols-1 gap-5">
                           <div>
                             <h4 className={style.formLableStyle}>
@@ -357,7 +345,6 @@ function Register({ }: Props) {
                               required
                             />
                           </div>
-
                           <div>
                             <h4 className={style.formLableStyle}>Email (Member 2)</h4>
                             <input
@@ -368,7 +355,6 @@ function Register({ }: Props) {
                               required
                             />
                           </div>
-
                           <div className="grid grid-cols-1 gap-4">
                             {/* <div>
                               <h4 className={style.formLableStyle}>
@@ -403,9 +389,6 @@ function Register({ }: Props) {
                                   </div>
                               </div>
                             </div> */}
-
-
-
                             <div>
                               <h4 className={style.formLableStyle}>
                                 School/University Name (Member 2)
@@ -419,7 +402,6 @@ function Register({ }: Props) {
                               />
                             </div>
                           </div>
-
                           <div>
                             <h4 className={style.formLableStyle}>
                               WhatsApp Number (Member 2)
@@ -432,14 +414,9 @@ function Register({ }: Props) {
                               required
                             />
                           </div>
-
                         </div>
-
-
                         <hr className="md:hidden" />
-
                         <div className="grid grid-cols-1 gap-5">
-
                           <div>
                             <h4 className={style.formLableStyle}>Full Name (Member 3)</h4>
                             <input
@@ -450,7 +427,6 @@ function Register({ }: Props) {
                               required
                             />
                           </div>
-
                           <div>
                             <h4 className={style.formLableStyle}>Email (Member 3)</h4>
                             <input
@@ -461,7 +437,6 @@ function Register({ }: Props) {
                               required
                             />
                           </div>
-
                           <div className="grid grid-cols-1 gap-4">
                             {/* <div>
                               <h4 className={style.formLableStyle}>
@@ -509,7 +484,6 @@ function Register({ }: Props) {
                               />
                             </div>
                           </div>
-
                           <div>
                             <h4 className={style.formLableStyle}>
                               WhatsApp Number (Member 3)
@@ -524,20 +498,13 @@ function Register({ }: Props) {
                           </div>
                         </div>
                       </div>
-
                     </div>
-
-
-
-
                       <div className="text-30 font-medium text-md mx-auto mt-5 text-center">
                       මේ ෆෝරම් එකේ දාන්න ප්‍රශ්න තියෙනවා නම් 0714118736 දුරකථන අංකයට කෝල් එකක් දෙන්න. <br /> අපි කැමතියි ඔයාලට උදව් කරන්න!
                       </div>
-
                   </div>
                 )}
               </div>
-
               <div className="flex items-center justify-center mt-6">
                 <div className="mb-12">
                   <MoonLoader
@@ -601,5 +568,4 @@ function Register({ }: Props) {
     </div>
   );
 }
-
 export default Register;
