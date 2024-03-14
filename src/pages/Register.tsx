@@ -261,10 +261,6 @@ function Register({ }: Props) {
                 </div>
                 <hr />
                 <div>
-                  <h4 className={style.formLableStyle}>
-                     What is the date you are willing to participate
-
-                   </h4>
                 
                    <div className="flex flex-row gap-5 mt-2">
 
