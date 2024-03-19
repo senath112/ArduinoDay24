@@ -75,13 +75,13 @@ const Speakers = ({ }: Props) => {
             <div className="border-2 border-30 rounded-md px-6 h-[200px] md:h-[100%] grid place-items-center md:order-7">
               <p className={style.infoCardText}>
                 <div className={style.infoCardName}>
-                Prof Prabath Weerasinghe
+                Sahanaka Weerarathna
                 </div>
                 <div className={style.infoCardDesc}>
                 The Cloud Evolution: Transforming Traditional Computing and Fostering Innovation - This presentation will highlight how cloud computing is reshaping the landscape of computing, from the ascent of software-as-a-service (SaaS) to the expansion of cloud-native applications and infrastructure.
                 </div>
                 <div className={style.infoCardPost}>
-                  Youtuber
+                Electronics Engineer,Youtuber
                 </div>
               </p>
             </div>
