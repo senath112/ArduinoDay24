@@ -11,7 +11,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
 
   function calculateRemainingTime() {
     const currentTime = new Date().getTime();
-    const targetDate = new Date('2024-03-23T00:00:00').getTime();
+    const targetDate = new Date('2025-03-23T00:00:00').getTime();
     const difference = targetDate - currentTime;
     return {
       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
