@@ -15,7 +15,7 @@ const Speakers = ({ }: Props) => {
     <div className='flex items-center w-full justify-center'>
       <div id='speakers' className="mx-5 mt-3 lg:max-w-7xl">
         <p className="font-semibold text-4xl text-80">
-          SPEAKERS
+          SPEAKERS (2024)
         </p>
       
         <div className=''>
